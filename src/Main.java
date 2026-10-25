@@ -1,4 +1,5 @@
 import context.Navigator;
+import strategy.BusStrategy;
 import strategy.CarStrategy;
 import strategy.CycleStrategy;
 import strategy.RouteStrategy;
@@ -30,6 +31,7 @@ public class Main {
         strategies.put("car", new CarStrategy());
         strategies.put("walk", new WalkStrategy());
         strategies.put("cycle", new CycleStrategy());
+        strategies.put("bus", new BusStrategy());
         return strategies;
     }
 
